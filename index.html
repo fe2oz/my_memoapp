@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.5.3/dist/vue-router.js"></script>
+</head>
+
+<body>
+    
+    <div id="app">
+        <div class="memo">
+            <div class="memo__body">
+                <div class="memo__header">
+                    <h1>메모</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <router-link to="/OneBook">
+                                <i class="fa-solid fa-folder folder"></i> 2019년 읽은 책
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/OneBook1">
+                                <i class="fa-solid fa-folder folder"></i> 2020년 읽은 책
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/OneBook2">
+                                <i class="fa-solid fa-folder folder"></i> 2021년 읽은 책
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/OneBook3">
+                                <i class="fa-solid fa-folder folder"></i> 2022년 읽은 책
+                            </router-link>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
+    
+            <div class="memo__list">
+                <router-view name="one1"></router-view>
+            </div>
+
+            <div class="memo__view">
+                <router-view name="two1"></router-view>
+            </div>            
+        </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="js/memoview.js"></script>
+    <script src="js/memoList.js"></script>
+</body>
+
+</html>
+
