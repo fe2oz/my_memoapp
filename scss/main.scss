@@ -81,7 +81,7 @@ body{
                     
                 .andre, .magic, .kimhoon, .kimhoon1, .kimhoon2, .roya, .sadpeople, 
                 .salt, .aeran, .pyo, .pyo1, .pyo2, .mukmuk{
-                    width: 50%;
+                    width: 50%; height: 100%;
                     text-overflow:ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
@@ -100,15 +100,18 @@ body{
     &__view{
         @include common;
         overflow-x:hidden;
-
-        &__one{
-
-        }
         h1{
             width: 100%; height: 5vh;
             padding: 1rem;
+            margin-right: 1rem;
             font-size: 1.9vw;
             background-color: #eee;
+        }
+        &__one{
+            height: 100%;
+            p{
+                padding: 1em;
+            }
         }
     }
 }

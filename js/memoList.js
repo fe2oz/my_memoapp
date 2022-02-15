@@ -6,73 +6,95 @@ var OneBook = {  /////// 2019년
         </div>
         
         <div class="memo__list__one_andre">
-            <router-link to="/OneBook/twoBook">
+            <router-link to="/twoBook">
                 <p>안드레 애치먼 - 그 해, 여름 손님
-                <span class="andre">{{ OneBookData_one }}</span>
+                    <span class="andre"></span>
                 </p>
             </router-link>
         </div>
         <div class="memo__list__one_andre">
-            <router-link to="/OneBook/twoBook1">
+            <router-link to="/twoBook1">
                 <p>정혜윤 - 마술 라디오
-                    <span class="magic">{{ OneBookData_one }}</span>
+                    <span class="magic"></span>
                 </p>
             </router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>김훈 - 공터에서
-                <span class="kimhoon">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook2">
+                <p>김훈 - 공터에서
+                    <span class="kimhoon"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>다이앤 리 - 로야
-                <span class="roya">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook3">
+                <p>다이앤 리 - 로야
+                    <span class="roya"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>나쓰메 소세키 - 슬픈 인간
-                <span class="sadpeople">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook4">
+                <p>나쓰메 소세키 - 슬픈 인간
+                    <span class="sadpeople"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>박범신 - 소금
-                <span class="salt">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook5">
+                <p>박범신 - 소금
+                    <span class="salt"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>김애란 - 두근두근 내 인생
-                <span class="aeran">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook6">
+                <p>김애란 - 두근두근 내 인생
+                    <span class="aeran"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>표창원 - 공범들의 도시
-                <span class="pyo">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook7">
+                <p>표창원 - 공범들의 도시
+                    <span class="pyo"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>표창원 - 프로파일러 표창원의 사건 추적
-                <span class="pyo1">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook8">
+                <p>표창원 - 프로파일러 표창원의 사건 추적
+                    <span class="pyo1"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>표창원 - 한국의 CSI
-                <span class="pyo2">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook9">
+                <p>표창원 - 한국의 CSI
+                    <span class="pyo2"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>김훈 - 흑산
-                <span class="kimhoon1">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook10">
+                <p>김훈 - 흑산
+                    <span class="kimhoon1"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>김훈 - 남한산성
-                <span class="kimhoon2">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook11">
+                <p>김훈 - 남한산성
+                    <span class="kimhoon2"></span>
+                </p>
+            <router-link>
         </div>
         <div class="memo__list__one_andre">
-            <p>고병권 - 묵묵
-                <span class="mukmuk">{{ OneBookData_one }}</span>
-            </p>
+            <router-link to="/OneBook/twoBook12">
+                <p>고병권 - 묵묵
+                    <span class="mukmuk"></span>
+                </p>
+            <router-link>
         </div>
     </div>
     `
@@ -369,44 +391,23 @@ var OneBook3 = {  /////// 2022년
 }
 
 var routes = [
-    {
-        path: '/oneBook',
-        components: {
-            one1: OneBook
-        }
-    },
-    {
-        path: '/OneBook1',
-        components: {
-            one1: OneBook1
-        }
-    },
-    {
-        path: '/OneBook2',
-        components: {
-            one1: OneBook2
-        }
-    },
-    {
-        path: '/OneBook3',
-        components: {
-            one1: OneBook3
-        }
-    },
-    {
-        path: '/OneBook/twoBook',
-        components: {
-            one1: OneBook,
-            two1: twoBook
-        }
-    },
-    {
-        path: '/OneBook/twoBook1',
-        components: {
-            one1: OneBook,
-            two1: twoBook1
-        }
-    }
+    { path: '/oneBook', components: {one1: OneBook} }, // 2019년
+    { path: '/OneBook1', components: {one1: OneBook1} }, // 2020년
+    { path: '/OneBook2', components: {one1: OneBook2} }, // 2021년
+    { path: '/OneBook3', components: {one1: OneBook3} }, // 2022년
+    { path: '/twoBook', components: {one1: OneBook, two1: twoBook} }, // 그 해 여름 손님
+    { path: '/twoBook1', components: { one1: OneBook, two1: twoBook1} }, // 마술 라디오
+    { path: '/OneBook/twoBook2', components: { one1: OneBook, two1: twoBook2} }, // 공터에서
+    { path: '/OneBook/twoBook3', components: { one1: OneBook, two1: twoBook3} }, // 로야
+    { path: '/OneBook/twoBook4', components: { one1: OneBook, two1: twoBook4} }, // 슬픈 인간
+    { path: '/OneBook/twoBook5', components: { one1: OneBook, two1: twoBook5} }, // 소금
+    { path: '/OneBook/twoBook6', components: { one1: OneBook, two1: twoBook6} }, // 두근두근 내 인생
+    { path: '/OneBook/twoBook7', components: { one1: OneBook, two1: twoBook7} }, // 공범들의 도시
+    { path: '/OneBook/twoBook8', components: { one1: OneBook, two1: twoBook8} }, // 프로파일러 표창원의 사건 추적
+    { path: '/OneBook/twoBook9', components: { one1: OneBook, two1: twoBook9} }, // 한국의 csi
+    { path: '/OneBook/twoBook10', components: { one1: OneBook, two1: twoBook10} }, // 흑산
+    { path: '/OneBook/twoBook11', components: { one1: OneBook, two1: twoBook11} }, // 남한산성
+    { path: '/OneBook/twoBook12', components: { one1: OneBook, two1: twoBook12} }, // 묵묵
 ]
 
 var router = new VueRouter({
@@ -416,6 +417,7 @@ var router = new VueRouter({
 var app = new Vue({
     router
 }).$mount("#app");
+
 
 
 ////

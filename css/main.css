@@ -93,6 +93,7 @@ body a {
 .memo__list__three_andre .salt, .memo__list__three_andre .aeran, .memo__list__three_andre .pyo, .memo__list__three_andre .pyo1, .memo__list__three_andre .pyo2, .memo__list__three_andre .mukmuk, .memo__list__four_andre .andre, .memo__list__four_andre .magic, .memo__list__four_andre .kimhoon, .memo__list__four_andre .kimhoon1, .memo__list__four_andre .kimhoon2, .memo__list__four_andre .roya, .memo__list__four_andre .sadpeople,
 .memo__list__four_andre .salt, .memo__list__four_andre .aeran, .memo__list__four_andre .pyo, .memo__list__four_andre .pyo1, .memo__list__four_andre .pyo2, .memo__list__four_andre .mukmuk {
   width: 50%;
+  height: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -118,6 +119,13 @@ body a {
   width: 100%;
   height: 5vh;
   padding: 1rem;
+  margin-right: 1rem;
   font-size: 1.9vw;
   background-color: #eee;
+}
+.memo__view__one {
+  height: 100%;
+}
+.memo__view__one p {
+  padding: 1em;
 }
