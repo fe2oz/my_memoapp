@@ -1,4 +1,4 @@
-# 02.15 아이폰 메모장 앱
+# 02.15~ 아이폰 메모장 앱
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/93234748/154204755-fbbf04e1-9556-46b8-93fe-027cef956b44.gif)
 
