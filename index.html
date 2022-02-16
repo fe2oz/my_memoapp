@@ -50,12 +50,12 @@
             </div>
     
             <div class="memo__list">
-                <router-view name="one1"></router-view>
+                <router-view name="one1" :key="$route.fullPath"/>
             </div>
 
             <div class="memo__view">
-                <router-view name="two1"></router-view>
-                <router-view name="two2"></router-view>
+                <router-view name="two1" :key="$route.fullPath"/>
+                <router-view name="two2" :key="$route.fullPath"/>
             </div>            
         </div>
     </div>

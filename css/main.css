@@ -1,14 +1,16 @@
 @font-face {
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
+
 body {
-  font-family: "Pretendard-Regular";
+  font-family: 'Pretendard-Regular';
   color: #000;
   overflow-x: hidden;
 }
+
 body a {
   text-decoration: none;
   color: #000;
@@ -31,10 +33,17 @@ body a {
 .memo {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .memo__body {
   width: 30%;
   height: 100%;
@@ -42,6 +51,7 @@ body a {
   overflow-x: hidden;
   border-radius: 10px;
 }
+
 .memo__body li {
   height: 50px;
   line-height: 50px;
@@ -52,10 +62,12 @@ body a {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .memo__body li .folder {
   color: #ffa600;
   padding-right: 10px;
 }
+
 .memo__body .memo__header {
   width: 100%;
   height: 5vh;
@@ -63,6 +75,7 @@ body a {
   font-size: 0.96vw;
   background-color: #eee;
 }
+
 .memo__list {
   width: 30%;
   height: 100%;
@@ -70,9 +83,11 @@ body a {
   overflow-x: hidden;
   border-radius: 10px;
 }
+
 .memo__list__one, .memo__list__two, .memo__list__three, .memo__list__four {
   overflow-y: auto;
 }
+
 .memo__list__one_andre, .memo__list__two_andre, .memo__list__three_andre, .memo__list__four_andre {
   height: 50px;
   line-height: 50px;
@@ -84,14 +99,23 @@ body a {
   cursor: pointer;
   line-height: 18px;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .memo__list__one_andre .andre, .memo__list__one_andre .magic, .memo__list__one_andre .kimhoon, .memo__list__one_andre .kimhoon1, .memo__list__one_andre .kimhoon2, .memo__list__one_andre .roya, .memo__list__one_andre .sadpeople,
-.memo__list__one_andre .salt, .memo__list__one_andre .aeran, .memo__list__one_andre .pyo, .memo__list__one_andre .pyo1, .memo__list__one_andre .pyo2, .memo__list__one_andre .mukmuk, .memo__list__two_andre .andre, .memo__list__two_andre .magic, .memo__list__two_andre .kimhoon, .memo__list__two_andre .kimhoon1, .memo__list__two_andre .kimhoon2, .memo__list__two_andre .roya, .memo__list__two_andre .sadpeople,
-.memo__list__two_andre .salt, .memo__list__two_andre .aeran, .memo__list__two_andre .pyo, .memo__list__two_andre .pyo1, .memo__list__two_andre .pyo2, .memo__list__two_andre .mukmuk, .memo__list__three_andre .andre, .memo__list__three_andre .magic, .memo__list__three_andre .kimhoon, .memo__list__three_andre .kimhoon1, .memo__list__three_andre .kimhoon2, .memo__list__three_andre .roya, .memo__list__three_andre .sadpeople,
-.memo__list__three_andre .salt, .memo__list__three_andre .aeran, .memo__list__three_andre .pyo, .memo__list__three_andre .pyo1, .memo__list__three_andre .pyo2, .memo__list__three_andre .mukmuk, .memo__list__four_andre .andre, .memo__list__four_andre .magic, .memo__list__four_andre .kimhoon, .memo__list__four_andre .kimhoon1, .memo__list__four_andre .kimhoon2, .memo__list__four_andre .roya, .memo__list__four_andre .sadpeople,
-.memo__list__four_andre .salt, .memo__list__four_andre .aeran, .memo__list__four_andre .pyo, .memo__list__four_andre .pyo1, .memo__list__four_andre .pyo2, .memo__list__four_andre .mukmuk {
+.memo__list__one_andre .salt, .memo__list__one_andre .aeran, .memo__list__one_andre .pyo, .memo__list__one_andre .pyo1, .memo__list__one_andre .pyo2, .memo__list__one_andre .mukmuk, .memo__list__one_andre .part, .memo__list__one_andre .sea, .memo__list__one_andre .theroad,
+.memo__list__one_andre .forest, .memo__list__one_andre .perfume, .memo__list__two_andre .andre, .memo__list__two_andre .magic, .memo__list__two_andre .kimhoon, .memo__list__two_andre .kimhoon1, .memo__list__two_andre .kimhoon2, .memo__list__two_andre .roya, .memo__list__two_andre .sadpeople,
+.memo__list__two_andre .salt, .memo__list__two_andre .aeran, .memo__list__two_andre .pyo, .memo__list__two_andre .pyo1, .memo__list__two_andre .pyo2, .memo__list__two_andre .mukmuk, .memo__list__two_andre .part, .memo__list__two_andre .sea, .memo__list__two_andre .theroad,
+.memo__list__two_andre .forest, .memo__list__two_andre .perfume, .memo__list__three_andre .andre, .memo__list__three_andre .magic, .memo__list__three_andre .kimhoon, .memo__list__three_andre .kimhoon1, .memo__list__three_andre .kimhoon2, .memo__list__three_andre .roya, .memo__list__three_andre .sadpeople,
+.memo__list__three_andre .salt, .memo__list__three_andre .aeran, .memo__list__three_andre .pyo, .memo__list__three_andre .pyo1, .memo__list__three_andre .pyo2, .memo__list__three_andre .mukmuk, .memo__list__three_andre .part, .memo__list__three_andre .sea, .memo__list__three_andre .theroad,
+.memo__list__three_andre .forest, .memo__list__three_andre .perfume, .memo__list__four_andre .andre, .memo__list__four_andre .magic, .memo__list__four_andre .kimhoon, .memo__list__four_andre .kimhoon1, .memo__list__four_andre .kimhoon2, .memo__list__four_andre .roya, .memo__list__four_andre .sadpeople,
+.memo__list__four_andre .salt, .memo__list__four_andre .aeran, .memo__list__four_andre .pyo, .memo__list__four_andre .pyo1, .memo__list__four_andre .pyo2, .memo__list__four_andre .mukmuk, .memo__list__four_andre .part, .memo__list__four_andre .sea, .memo__list__four_andre .theroad,
+.memo__list__four_andre .forest, .memo__list__four_andre .perfume {
   width: 50%;
   height: 100%;
   text-overflow: ellipsis;
@@ -100,6 +124,7 @@ body a {
   font-size: 0.8vw;
   color: #555;
 }
+
 .memo__list__one h1, .memo__list__two h1, .memo__list__three h1, .memo__list__four h1 {
   width: 100%;
   height: 5vh;
@@ -107,6 +132,7 @@ body a {
   font-size: 1.9vw;
   background-color: #eee;
 }
+
 .memo__view {
   width: 30%;
   height: 100%;
@@ -115,17 +141,20 @@ body a {
   border-radius: 10px;
   overflow-x: hidden;
 }
+
 .memo__view h1 {
-  width: 100%;
+  width: 90%;
   height: 5vh;
   padding: 1rem;
   margin-right: 1rem;
   font-size: 1.9vw;
   background-color: #eee;
 }
+
 .memo__view__one {
   height: 100%;
 }
+
 .memo__view__one p {
   padding: 1em;
 }

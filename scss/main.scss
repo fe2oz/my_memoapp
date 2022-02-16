@@ -80,7 +80,8 @@ body{
                 display: flex; align-items: center;
                     
                 .andre, .magic, .kimhoon, .kimhoon1, .kimhoon2, .roya, .sadpeople, 
-                .salt, .aeran, .pyo, .pyo1, .pyo2, .mukmuk{
+                .salt, .aeran, .pyo, .pyo1, .pyo2, .mukmuk, .part, .sea, .theroad,
+                .forest, .perfume{
                     width: 50%; height: 100%;
                     text-overflow:ellipsis;
                     overflow: hidden;
@@ -101,7 +102,7 @@ body{
         @include common;
         overflow-x:hidden;
         h1{
-            width: 100%; height: 5vh;
+            width: 90%; height: 5vh;
             padding: 1rem;
             margin-right: 1rem;
             font-size: 1.9vw;
