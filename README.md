@@ -1,7 +1,12 @@
 # 02.15
 
-<img width="1440" alt="스크린샷 2022-02-15 오후 10 29 58" src="https://user-images.githubusercontent.com/93234748/154071772-65373972-befd-4a46-8ba7-a0e5536cc1cc.png">
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/93234748/154204755-fbbf04e1-9556-46b8-93fe-027cef956b44.gif)
 
-첫 번째 박스에서 각 년도를 클릭하면 router-link로 두 번째 박스에 목록이 뜬다. 두 번째 박스에서 각각의 책 리스트를 클릭하면 세 번째 박스에 책 내용이 나타남.
-❗️ 문제 : 처음 텍스트까지는 잘 뜨는데 책 리스트에서 왔다 갔다 하면 텍스트가 아예 안 보임.
+# 첫 번째 컨텐츠 박스
 
+각 년도를 <li><router-link></li>로 감쌌다. 2019년은 router-link to="/OneBook", 2020년은 "/OneBook1" 식으로 지정.
+클릭하면 router-view name="one1"으로 이동한다. 이는 책 가운데 컨텐츠 박스인 책 리스트를 보여준다
+  
+
+<img width="408" alt="스크린샷 2022-02-16 오후 2 56 34" src="https://user-images.githubusercontent.com/93234748/154205127-670f250f-fab6-470d-b257-05909114835c.png">
+<img width="493" alt="스크린샷 2022-02-16 오후 2 57 21" src="https://user-images.githubusercontent.com/93234748/154205133-528a25af-df47-463c-afe8-1debfd3a88ff.png">
