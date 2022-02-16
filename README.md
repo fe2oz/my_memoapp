@@ -4,7 +4,7 @@
 
 # 첫 번째 컨텐츠 박스
 
-각 년도를 <li><router-link></li>로 감쌌다. 2019년은 router-link to="/OneBook", 2020년은 "/OneBook1" 식으로 지정.
+각 년도를 li 태그 안에 router-link로 감쌌다. 2019년은 router-link to="/OneBook", 2020년은 "/OneBook1" 식으로 지정.
 클릭하면 router-view name="one1"으로 이동한다. 이는 책 가운데 컨텐츠 박스인 책 리스트를 보여준다
   
 
